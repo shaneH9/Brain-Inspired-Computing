@@ -11,9 +11,15 @@ The goal of this assignment is to develop an understanding of how the brain perf
 - Create a CS computing account: https://resources.cs.rutgers.edu/docs/new-users/getting-started/
 - Check iLabs' Status: https://report.cs.rutgers.edu/nagiosnotes/iLab-machines.html?v1
 - Login through iLab web GUI: https://weblogin.cs.rutgers.edu
-- Check conda environment by typing `conda env list` in the terminal
-- Activate conda environment by typing `conda activate python37` in the terminal
-- Start coding!
+- Download the assignment, unzip, and navigate to the assignment folder in the terminal
+- Create a Python virtual environment in your home directory by typing `python3 -m venv ~/.venvs/a1`
+- Activate the virtual environment by typing `source ~/.venvs/a1/bin/activate`
+- (Inside venv) upgrade pip and install deps by typing `python -m pip install --upgrade pip`
+- Install the necessary packages by typing `pip install --no-cache-dir -r requirements.txt`
+- type the following `pip install --index-url https://download.pytorch.org/whl/cpu torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1`
+- Make a Jupyter kernel for this venv (so you can pick it in the UI) by typing `python -m ipykernel install --user --name a1 --display-name "A1 (venv)"`
+- Troubleshooting: if the above steps do not work you can run `source /common/system/venv/python310/bin/activate` to use the existing python virtual environment on your ilab account. Alternatively, proceed via Google Colab or by downloading the required packages on your local machine. 
+- Start coding by running `python -m jupyterlab`
 
 2. Download the jupyter notebook titled "Assignment1_Questions.ipynb" on the ilab machine (if using ilab), or your local machine.
 
